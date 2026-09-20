@@ -4,10 +4,10 @@ A quiet Markdown reader for Windows. Rust handles file access and Markdown parsi
 
 ## Run
 
-Open **dist/Folio.exe**. No installer is needed. Choose a document with **Ctrl+O**, drop a file into the window, or pass its path on the command line:
+Download **Folio-Windows-x64.zip** from the [latest release](https://github.com/DenofTranquility/Folio/releases/latest), extract it, and open **Folio.exe**. No installer is needed. Choose a document with **Ctrl+O**, drop a file into the window, or pass its path on the command line:
 
 ```powershell
-.\dist\Folio.exe "C:\Notes\readme.md"
+.\Folio.exe "C:\Notes\readme.md"
 ```
 
 Try `examples/field-notes.md` for tables, code, tasks, local images, footnotes, and linked documents. In Windows, you can use **Open with → Choose another app** to associate `.md` files with Folio if you want.
