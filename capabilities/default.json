@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Only local window events are exposed to the reader.",
+  "windows": ["main"],
+  "permissions": ["core:event:default"]
+}

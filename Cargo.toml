@@ -1,0 +1,32 @@
+[package]
+name = "folio"
+version = "1.0.0"
+description = "A quiet, fast Markdown reader for Windows"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+pulldown-cmark = { version = "0.13", default-features = false, features = ["html"] }
+ammonia = "4"
+rfd = "0.17"
+base64 = "0.22"
+url = "2"
+webbrowser = "1"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[profile.release]
+opt-level = "s"
+lto = "thin"
+codegen-units = 1
+strip = true
+panic = "abort"
